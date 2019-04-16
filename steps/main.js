@@ -1,11 +1,13 @@
 import DefaultSteps from './default';
 import page from '../pages/main';
+import step from "./decorator";
 
 class MainPageSteps extends DefaultSteps {
 	constructor() {
 		super(page);
 	}
 
+    @step('Авторизация в почте')
 	login(username, password) {
 		this.page.fillLoginForm(username, password);
 		this.page.submit();

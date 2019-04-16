@@ -21,6 +21,8 @@
     "wdio-spec-reporter": "0.1.5"
   },
   "dependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-register": "^6.26.0",
     "chromedriver": "2.43.1",
     "selenium-standalone": "6.15.3"
   }
