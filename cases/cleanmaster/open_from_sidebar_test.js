@@ -1,5 +1,6 @@
 import settings from "../../steps/settings/index";
 import settingsSidebar from "../../steps/settings/sidebar";
+import cleanmaster from "../../steps/cleanmaster/index";
 import {auth} from "./constants";
 
 // Тест, проверяющий наличие и кликабельность Cleanmaster в сайдбаре настроек
@@ -9,5 +10,6 @@ describe('2', () => {
     it('Открыть раздел cleanmaster из сайдбара в настройках', () => {
         settings.open("https://e.mail.ru/settings?octaviusMode=1");
         settingsSidebar.openCleanmaster();
+        cleanmaster.waitForOpenCleanmaster();
     });
 });
